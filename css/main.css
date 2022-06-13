@@ -99,6 +99,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    background-color: whitesmoke;
 }
 
 .profile-radio-content {
@@ -121,14 +122,16 @@ body {
 }
 
 select {
+    max-width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
+    border-style: dotted;
     border-radius: 4px;
     resize: vertical;
     letter-spacing: 0px;
     font: normal normal normal 16px Roboto;
-    color: #425151;
-    background-color: transparent;
+    color: black;
+    background-color: rgb(164, 162, 157);
 }
 
 .button-content {
@@ -151,6 +154,7 @@ select {
     padding: 7px 7px;
     border: 1px solid #000000;
     cursor: pointer;
+    background-color: rgb(135, 139, 151);
 }
 
 .SubmitButton {
