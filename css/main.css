@@ -1,100 +1,126 @@
-<style>
-body {
-        margin: 0; 
-        height: 100%;
-        background-color: black;
-        }
+<style>body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
 
 .header {
-        padding: 15px 0;
-        background-color: yellowgreen;
-        }
-.header-content { 
-            display: flex;
-            flex-direction: row; 
-            justify-content: center; 
-            align-items: center; 
-            border: 1px solid darkblue;
-        }
+    padding: 15px 0;
+    background-color: yellowgreen;
+}
 
- .logo-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-            border: 0px solid black;
-            width: 80%;
-        }
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkblue;
+}
 
-.logo-content-img { border: solid 0px #42515f; }
-        
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid black;
+    width: 80%;
+}
+
+.logo-content-img {
+    border: solid 0px #42515f;
+}
+
 .emp-text {
-            font: normal normal bold 20px/25px "Montserrat";
-            font-family: "Montserrat", sans-serif;
-            letter-spacing: 0px; color: green;
-            text-transform: capitalize;
-            }
- .emp-payroll{ color: darkblue; }    
-        * { box-sizing: border-box;}
+    font: normal normal bold 20px/25px "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: green;
+    text-transform: capitalize;
+}
 
-        .form-content { 
-            display: flex; 
-            border: 0px solid green;
-            justify-content: center;
-            align-items: center;
-            }
+.emp-payroll {
+    color: darkblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    display: flex;
+    border: 0px solid green;
+    justify-content: center;
+    align-items: center;
+}
+
 .form {
-            width: 65%;
-            padding: 44px 60px;
-            background: #cfcaca 0% 0% no-repeat padding-box;
-            box-shadow: 0px 3px 6px #ee880029; border: 1px solid #c78a8a;
-            border-radius: 8px;
-            opacity: 1;
-            }
+    width: 65%;
+    padding: 44px 60px;
+    background: #cfcaca 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #ee880029;
+    border: 1px solid #c78a8a;
+    border-radius: 8px;
+    opacity: 1;
+}
+
 .form-head {
-            font: normal normal bold 24px/37px Roboto;
-            letter-spacing: 0px;
-            color: #42515f;
-            text-transform: capitalize;
-            opacity: 1;
-            padding-bottom: 20px;
-            }
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
 .row-content {
-            display: flex; flex-direction: row;
-            margin-bottom: 10px; align-items: center; border: 0px solid green;
-            }
-.label{
-            min-width: 140px;
-            padding: 12px 12px 12px 0; display: inline-block;
-            }
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.label {
+    min-width: 140px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
 .text {
-            font-size: 16px;
-            color: #425151;
-            opacity: 1; font-family: Roboto;
-            }
-.input{
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc; border-radius: 4px;
-            resize: vertical;
-            }   
-            
- .profile-radio-content { 
-            display: flex;
-            flex-direction: row;
-            display: flex;
-            }
-               
-.profile-radio-content > label { 
-            display: flex;
-            flex-direction: row; 
-            align-items: center;
-            }
+    font-size: 16px;
+    color: #425151;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .profile {
-        display: flex;
-        width: 40px;
-        border-radius: 50%; margin-left: 12px;
-        }
-body{
+    display: flex;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+body {
     background-color: aqua;
-}                    
+}
+
 </style>
