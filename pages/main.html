@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="chrome">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="/css/main.css">
@@ -61,8 +61,8 @@
           <label class="text" for="male">Male</label>
           <input type="radio" id="female" name="gender" value="female">
           <label class="text" for="female">Female</label>
-          <input type="radio" id="PNTS" name="gender" value="PNTS">
-          <label class="text" for="PNTS">Prefered Not To Say </label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label class="text" for="other">Other</label>
         </div>
       </div>
 
@@ -92,6 +92,7 @@
         <label class="label text" for="startDate">Start Date:- </label>
         <div class="lable text">
           <select id="day" name="Day">
+            <option value="" disabled selected hidden>Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -125,6 +126,7 @@
             <option value="31">31</option>
           </select>
           <select id="month" name="Month">
+            <option value="" disabled selected hidden>Month</option>
             <option value="Jan">January</option>
             <option value="Feb">Febuary</option>
             <option value="March">March</option>
@@ -139,6 +141,10 @@
             <option value="Dec">December</option>
           </select>
           <select id="year" name="Year">
+            <option value="" disabled selected hidden>Year</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
             <option value="2020">2020</option>
             <option value="2019">2019</option>
             <option value="2018">2018</option>
@@ -149,20 +155,20 @@
         </div>
         <!-- UC6 -->
         <div class="row-content">
-          <label class="label text" for="notes">Notes:-</label>
+          <label class="label text button:hover" for="notes">Notes:-</label>
           <textarea id="notes" class="input" name="Notes" placeholder="Enter Notes" style="height:100px"></textarea>
         </div>
         <div class="button-content">
-         <a href="/pages/main.html" class="resetButton button cancelButton">Cancel</a>
+         <a href="/pages/main.html" class="resetButton button cancelButton button:hover">Cancel</a>
           <div class="submit-reset">
-            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
-            <button type="reset" class=" button resetButton" id="resetButton">Reset</button>
+            <button type="submit" class="button submitButton button:hover" id="submitButton">Submit</button>
+            <button type="reset" class=" button resetButton button:hover" id="resetButton">Reset</button>
           </div>
         </div>
     </form>
-    <script src="/js/main.js"></script>
   </div>
-
+  <script src="/js/EmployeePayroll.js" ></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
