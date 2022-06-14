@@ -28,7 +28,8 @@
       <div class="form-head"> Employee Payroll form </div>
       <div class="row-content">
         <label class="label text" for="name">Name:- </label>
-        <input class="input" type="text" id="name" name="name" placeholder="Enter Your name.." required>
+        <input class="input input:hover" type="text" id="name" name="name" placeholder="Enter Your name.." required>
+        <error-output class="text-error" for="text"></error-output>
       </div>
 
       <!-- UC3 -->
@@ -155,8 +156,8 @@
         </div>
         <!-- UC6 -->
         <div class="row-content">
-          <label class="label text button:hover" for="notes">Notes:-</label>
-          <textarea id="notes" class="input" name="Notes" placeholder="Enter Notes" style="height:100px"></textarea>
+          <label class="label text" for="notes">Notes:-</label>
+          <textarea id="notes" class="input textarea:hover" name="Notes" placeholder="Enter Notes" style="height:100px"></textarea>
         </div>
         <div class="button-content">
          <a href="/pages/main.html" class="resetButton button cancelButton button:hover">Cancel</a>
@@ -169,6 +170,16 @@
   </div>
   <script src="/js/EmployeePayroll.js" ></script>
   <script src="/js/main.js"></script>
+
+  <footer class="header-content header">
+    <div class="logo-content">
+      <img src="/assest/images/logo.png" alt="">
+      <div>
+        <span class="emp-text">EMPLOYEE</span><br>
+        <span class="emp-text emp-payroll">PAYROLL</span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
