@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" media="screen" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
   <title>EmpPayrollWeb</title>
 
 </head>
@@ -24,7 +24,7 @@
   </header>
   <!-- UC2 -->
   <div class="form-content">
-    <form class="form" action="#" onsubmit="save(); return false">
+    <form class="form" action="#" onreset="resetForm()" onsubmit="save();">
       <div class="form-head"> Employee Payroll form </div>
       <div class="row-content">
         <label class="label text" for="name">Name:- </label>
@@ -70,29 +70,31 @@
       <div class="row-content">
         <label class="label text" for="department">Department:-</label>
         <div>
-          <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+          <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
           <label class="text" for="hr">HR</label>
-          <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
+          <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
           <label class="text" for="sales">Sales</label>
-          <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
+          <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
           <label class="text" for="finance">Finance</label>
-          <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
+          <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">
           <label class="text" for="engineer">Engineer</label>
-          <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
+          <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
           <label class="text" for="others">Others</label>
         </div>
       </div>
 
       <div class="row-content">
         <label class="label text" for="salary">Choose your salary:-</label>
-        <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+        <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000"
+          required>
         <output class="salary-output text" for="salary">400000</output>
       </div>
       <!-- UC5 -->
       <div class="row-content">
-        <label class="label text" for="startDate">Start Date:- </label>
-        <div class="lable text">
+        <label class="label text" for="startDate" id="date">Start Date:- </label>
+          <div class="lable text">
           <select id="day" name="Day">
+            
             <option value="" disabled selected hidden>Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -142,6 +144,7 @@
             <option value="Dec">December</option>
           </select>
           <select id="year" name="Year">
+          
             <option value="" disabled selected hidden>Year</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
@@ -152,26 +155,28 @@
             <option value="2017">2017</option>
             <option value="2016">2016</option>
           </select>
+          <error-output class="date-error" for="text"></error-output>
         </div>
+      </div>
+      <!-- UC6 -->
+      <div class="row-content">
+        <label class="label text" for="notes">Notes:-</label>
+        <textarea id="notes" class="input textarea:hover" name="Notes" placeholder="Enter Notes" style="height:100px"
+          requireds></textarea>
+      </div>
+      <div class="button-content">
+        <a href="/pages/main.html" class="resetButton button cancelButton button:hover">Cancel</a>
+        <div class="submit-reset">
+          <button type="submit" class="button submitButton button:hover" id="submitButton">Submit</button>
+          <button type="reset" class=" button resetButton button:hover" id="resetButton">Reset</button>
         </div>
-        <!-- UC6 -->
-        <div class="row-content">
-          <label class="label text" for="notes">Notes:-</label>
-          <textarea id="notes" class="input textarea:hover" name="Notes" placeholder="Enter Notes" style="height:100px"></textarea>
-        </div>
-        <div class="button-content">
-         <a href="/pages/main.html" class="resetButton button cancelButton button:hover">Cancel</a>
-          <div class="submit-reset">
-            <button type="submit" class="button submitButton button:hover" id="submitButton">Submit</button>
-            <button type="reset" class=" button resetButton button:hover" id="resetButton">Reset</button>
-          </div>
-        </div>
+      </div>
     </form>
   </div>
-  <script src="/js/EmployeePayroll.js" ></script>
+  <script src="/js/EmployeePayroll.js"></script>
   <script src="/js/main.js"></script>
 
-  <footer class="header-content header">
+  <footer class="footer-content footer">
     <div class="logo-content">
       <img src="/assest/images/logo.png" alt="">
       <div>
