@@ -121,9 +121,10 @@ const getInputElementValue = (id) => {
 const resetForm = () => {
     setValue('#name', '');
     unsetSelectedValues('[name=profile]');
-    unsetSelectedValues('[name=gender]'); unsetSelectedValues('[name=department]');
+    unsetSelectedValues('[name=gender]'); 
+    unsetSelectedValues('[name=department]');
     setValue('#salary', '');
-    setTextValue('.salary-output','400000') 
+    setTextValue('.salary-output','400000'); 
     setValue('#notes', '');
     setValue('#day', '');
     setValue('#month', '');
@@ -135,7 +136,8 @@ const unsetSelectedValues = (propertyValue) => {
     });
 }
 const setTextValue = (id, value) => {
-    const element = document.querySelector(id); element.textContent = value;
+    const element = document.querySelector(id); 
+    element.textContent = value;
 }
 const setValue = (id, value) => {
     const element = document.querySelector(id);
