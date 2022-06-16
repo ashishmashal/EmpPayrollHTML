@@ -5,7 +5,8 @@ body {
 
 .header {
     padding: 15px 0;
-    background-color: yellowgreen;
+    background-color: rgb(247, 247, 247);
+    border: #333;
 }
 
 .header-content {
@@ -104,17 +105,18 @@ body {
 }
 
 .table {
-    width: 100%;
+    width: 80%;
     border-collapse: separate;
-    border-spacing: 15px;
+    border-spacing: 0px;
     min-width: 800px;
+    margin-left: 10%;
 }
 
 td,
 th {
     text-align: left;
     padding: 5px 8px;
-    border: 1px solid #dddddd;
+    border: 1px solid #f7f7f7;
 }
 
 th {
@@ -130,7 +132,7 @@ th {
 }
 
 tr:not(:first-child) {
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
     border: 1px solid #eee;
     border-radius: 3px;
 }
