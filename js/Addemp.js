@@ -28,7 +28,7 @@ const createInnerHtml = () => {
                 <td>
                     <img id="${empPayrollData._name}" onclick="remove(this)"  
                                 src="/assest/icons/delete-black-18dp.svg" alt="delete">
-                    <img id="${empPayrollData._id}" onclick="update(this)" 
+                    <img id="${empPayrollData._name}" onclick="update(this)" 
                                 src="/assest/icons/create-black-18dp.svg" alt="edit">
                 </td>
             </tr>
@@ -56,3 +56,4 @@ const remove = (node) => {
     document.querySelector('.emp-count').textContent = empPayrollList.length;
     createInnerHtml();
 }
+
